@@ -1,0 +1,131 @@
+/* Başlık */
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: "Georgia", serif;
+  color: #3e2723;
+  margin-bottom: 1rem;
+  /* Books sayfasında justify vardı; onu orada tekrar vereceğiz */
+}
+
+/* Form, input, button, mesaj */
+form {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+input {
+  padding: 0.85rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.9rem;
+  background-color: #4e342e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #3e2723;
+}
+
+.message {
+  color: #00796b;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+/* Modal ortakları */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+.close-modal {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal input,
+.category-select {
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  width: 90%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: "Segoe UI", sans-serif;
+}
+.category-select {
+  background-color: white;
+  cursor: pointer;
+}
+.category-select:focus {
+  outline: none;
+  border-color: #4e342e;
+  box-shadow: 0 0 0 2px rgba(78, 52, 46, 0.2);
+}
+.modal button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  background-color: #4e342e;
+  color: white;
+}
+.modal button:hover {
+  background-color: #3e2723;
+}
+
+/* Liste aksiyon butonları */
+.actions button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+  color: #4e342e;
+}
+.actions button:hover {
+  background-color: #f0e6e2;
+}

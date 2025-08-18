@@ -1,0 +1,11 @@
+api.js tek bir axios nesnesi üretir.
+Request interceptor varsa token’ı header’a ekler, response interceptor 401’de logout/yönlendirme yapabilir.
+
+
+booksService.js: list/create/update/remove gibi CRUD fonksiyonları.
+authService.js: register, login.
+
+
+AuthService.login() token + user döndürür.
+Component’te store.login(username, token) çağrılır → localStorage yazılır, auth.isLoggedIn reaktif olur.
+logout() localStorage’ı temizler; UI anında güncellenir.
