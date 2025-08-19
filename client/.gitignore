@@ -1,6 +1,6 @@
-# Logs
+//# Logs
 logs
-*.log
+//*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -12,13 +12,13 @@ node_modules
 dist
 dist-ssr
 coverage
-*.local
+//*.local
 
 /cypress/videos/
 /cypress/screenshots/
 
-# Editor directories and files
-.vscode/*
+//Editor directories and files
+/*.vscode
 !.vscode/extensions.json
 .idea
 *.suo
@@ -26,8 +26,8 @@ coverage
 *.njsproj
 *.sln
 *.sw?
-
-*.tsbuildinfo
+*/
 
 basicRegister.txt
 z-note.txt
+akış.txt
